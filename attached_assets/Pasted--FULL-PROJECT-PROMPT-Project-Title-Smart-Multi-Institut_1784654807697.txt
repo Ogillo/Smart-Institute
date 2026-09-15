@@ -1,0 +1,690 @@
+# FULL PROJECT PROMPT
+
+## Project Title
+
+**Smart Multi-Institution Admission and Student Onboarding Management System**
+
+---
+
+# Project Overview
+
+Build a modern, secure, responsive web-based Multi-Institution Admission and Student Onboarding Management System for Secondary Schools, Colleges, and Universities.
+
+The system should digitalize the entire admission process from the time a student receives an admission/placement letter until the student reports to school and is officially registered.
+
+The primary objective of the system is to reduce the physical reporting process to **less than 30 minutes**, especially for parents and guardians travelling from distant towns and counties.
+
+The platform must support multiple institutions, each with its own administrators, admission requirements, fee structures, inventory, and student records.
+
+---
+
+# User Roles
+
+The system should support the following user roles:
+
+## 1. Super Administrator
+
+Responsible for managing the entire platform.
+
+Permissions:
+
+* Register and approve institutions
+* Manage institution subscriptions
+* Manage all users
+* View analytics
+* View system reports
+* Manage system settings
+* Manage SMS and Email integrations
+* Manage payment integrations
+* Audit logs
+
+---
+
+## 2. Institution Administrator
+
+Responsible for managing admissions within one institution.
+
+Permissions:
+
+* Manage school profile
+* Upload admission requirements
+* Upload school shopping requirements
+* Manage applications
+* Verify documents
+* Approve admissions
+* Allocate students
+* Manage inventory
+* View reports
+
+---
+
+## 3. Admission Officer
+
+Permissions:
+
+* Verify admission letters
+* Verify uploaded documents
+* Approve or reject applications
+* Assign admission numbers
+* Allocate streams
+* Allocate dormitories
+* Assign class teachers
+
+---
+
+## 4. Finance Officer
+
+Permissions:
+
+* View payments
+* Verify payments
+* Generate receipts
+* View outstanding balances
+* Generate financial reports
+
+---
+
+## 5. Storekeeper
+
+Permissions:
+
+* Upload school requirement items
+* Update prices
+* Update quantities
+* Manage inventory
+* View purchased items
+
+---
+
+## 6. Parent / Student
+
+Permissions:
+
+* Register
+* Login
+* Apply for admission
+* Upload documents
+* Purchase school items
+* Pay fees
+* Track application status
+* Receive notifications
+* Download receipts
+
+---
+
+# LANDING PAGE
+
+The landing page should contain two large buttons:
+
+1. Institution Login
+2. Parent / Student Portal
+
+The homepage should also include:
+
+* Hero section
+* Search institutions
+* About the platform
+* Contact information
+* Frequently Asked Questions
+
+---
+
+# PARENT/STUDENT WORKFLOW
+
+## Step 1
+
+Register account.
+
+Fields:
+
+* Full Name
+* Phone Number
+* Email Address
+* Password
+
+---
+
+## Step 2
+
+Login
+
+---
+
+## Step 3
+
+Select learning level
+
+Options:
+
+* Secondary School
+* College
+* University
+
+---
+
+## Step 4
+
+Search institution
+
+Search by:
+
+* Institution Name
+* County
+* Category
+
+Display:
+
+* Institution profile
+* Contact information
+* Reporting dates
+* Fee structure
+* Admission requirements
+
+---
+
+## Step 5
+
+Upload Admission Letter
+
+The admission letter should contain:
+
+* Student Name
+* Institution Name
+* Reporting Date
+* Admission Number (optional)
+* Unique Verification Code
+* QR Code (optional)
+
+System verifies:
+
+* Unique code
+* Institution
+* Student details
+
+Invalid codes should prevent further progress.
+
+---
+
+## Step 6
+
+Confirm Admission
+
+Parent accepts admission offer.
+
+---
+
+## Step 7
+
+Student Registration
+
+Collect:
+
+* Student Name
+* Gender
+* Date of Birth
+* Assessment Number
+* Admission Number (if available)
+* Religion
+* County
+* Home Address
+* Previous School
+
+---
+
+## Step 8
+
+Guardian Information
+
+Collect:
+
+* Parent Name
+* Relationship
+* Phone Number
+* Email
+* Occupation
+* Residential Address
+* Emergency Contact
+
+---
+
+## Step 9
+
+Upload Required Documents
+
+Upload:
+
+* Admission Letter
+* Birth Certificate
+* KJSEA Result Slip
+* Passport Photo
+* Medical Form
+* Leaving Certificate
+* Transfer Letter (optional)
+* NEMIS Details (optional)
+
+---
+
+## Step 10
+
+Institution Requirements
+
+The school uploads all required items.
+
+Each item contains:
+
+* Item Name
+* Description
+* Quantity
+* Unit Cost
+* Available Stock
+
+Example:
+
+Uniform
+
+Quantity: 2
+
+Cost: KES 1,500
+
+Sweater
+
+Quantity: 1
+
+Cost: KES 1,200
+
+Exercise Books
+
+Quantity: 12
+
+Cost: KES 100
+
+---
+
+## Step 11
+
+Purchase Requirements
+
+For every item parent chooses:
+
+Already Have
+
+OR
+
+Purchase From School
+
+System automatically calculates:
+
+* Quantity
+* Unit Cost
+* Item Total
+* Grand Total
+
+---
+
+## Step 12
+
+School Fees
+
+Display:
+
+* Tuition Fee
+* Boarding Fee
+* Activity Fee
+* Admission Fee
+* Purchased Items
+
+Generate total payable amount.
+
+---
+
+## Step 13
+
+Payment
+
+Support:
+
+* M-Pesa
+* Airtel Money
+* Bank Transfer
+* Debit/Credit Cards
+
+Generate:
+
+* Receipt Number
+* Transaction ID
+* Payment Confirmation
+
+---
+
+## Step 14
+
+Automatic Student Allocation
+
+After payment confirmation the system (or authorized admission officer) assigns:
+
+* Admission Number
+* Stream/Class
+* Dormitory/House
+* Class Teacher
+* Class Teacher Phone Number
+* Reporting Date
+* Reporting Time
+
+The assigned information is stored in the student's profile.
+
+---
+
+## Step 15
+
+Automated Communication Centre
+
+The system should automatically send SMS and email notifications when important events occur.
+
+Automatic notifications include:
+
+* Registration successful
+* Admission letter verified
+* Documents approved
+* Missing documents
+* Requirements available
+* Payment confirmed
+* Student allocation completed
+* Reporting reminder
+* Reporting completed
+* General announcements
+* Emergency notifications
+
+### Sample SMS
+
+GREEN VALLEY SECONDARY SCHOOL
+
+Congratulations!
+
+Your child's admission has been confirmed.
+
+Admission Number: GVS/F1/2027/0156
+
+Student: John Mwangi Kamau
+
+Stream: Form 1 East
+
+Dormitory: Nyati House
+
+Class Teacher: Mrs. Jane Achieng
+
+Teacher Phone: 0712 345 678
+
+Reporting Date:
+5 January 2027
+
+Reporting Time:
+8:00 AM
+
+Please keep this message for reporting.
+
+---
+
+## Step 16
+
+Reporting Day
+
+The parent arrives at school.
+
+Administrator searches using:
+
+* Admission Number
+* Student Name
+* Assessment Number
+
+System instantly displays:
+
+* Payment Status
+* Verified Documents
+* Stream
+* Dormitory
+* Teacher
+* Reporting Status
+
+Administrator clicks:
+
+CHECK IN
+
+Reporting should take less than **30 minutes**.
+
+---
+
+## Step 17
+
+Medical Screening
+
+(Optional)
+
+Record:
+
+* Height
+* Weight
+* Vision
+* Allergies
+* Medical Conditions
+
+---
+
+## Step 18
+
+Student Orientation
+
+Student receives:
+
+* School Rules
+* Timetable
+* Dormitory Information
+* Teacher Introduction
+* Clubs
+* Library Information
+
+---
+
+## Step 19
+
+Student Account
+
+Generate:
+
+* Student Portal Account
+* Username
+* Temporary Password
+* Student ID Number
+
+---
+
+## Step 20
+
+Learning Begins
+
+Student:
+
+* Joins class
+* Receives textbooks
+* Joins clubs
+* Begins normal learning
+
+---
+
+# ADMIN DASHBOARD
+
+Dashboard Cards:
+
+* Applications
+* Payments
+* Reporting Students
+* Pending Documents
+* Revenue
+* Inventory
+* Dormitory Occupancy
+* Recent Notifications
+
+---
+
+# INVENTORY MODULE
+
+Manage:
+
+* Uniforms
+* Sweaters
+* Books
+* Bedding
+* Sportswear
+* Trunks
+
+Track:
+
+* Stock
+* Sold
+* Remaining
+
+Generate low-stock alerts.
+
+---
+
+# CLASS MANAGEMENT
+
+Create:
+
+* Academic Years
+* Classes
+* Streams
+
+Assign:
+
+* Teachers
+* Students
+
+---
+
+# DORMITORY MANAGEMENT
+
+Create:
+
+* Dormitories
+* Houses
+
+Manage:
+
+* Capacity
+* Occupancy
+* Dormitory Master/Mistress
+
+---
+
+# REPORTS
+
+Generate:
+
+* Admission Report
+* Payment Report
+* Inventory Report
+* Reporting Report
+* Student Register
+* Class Lists
+* Dormitory Lists
+* Revenue Reports
+
+Export reports as PDF and Excel.
+
+---
+
+# DATABASE TABLES
+
+* Users
+* Roles
+* Institutions
+* AcademicYears
+* Applications
+* Students
+* Guardians
+* Documents
+* AdmissionLetters
+* AdmissionCodes
+* RequirementItems
+* RequirementOrders
+* Inventory
+* Payments
+* Receipts
+* Classes
+* Streams
+* Teachers
+* Dormitories
+* StudentAllocations
+* Notifications
+* AuditLogs
+
+---
+
+# TECHNOLOGY STACK
+
+Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+Backend
+
+* Node.js
+* Express.js
+
+Database
+
+* PostgreSQL
+
+Authentication
+
+* JWT
+* Role-Based Access Control (RBAC)
+
+File Storage
+
+* Cloudinary or AWS S3
+
+Payments
+
+* M-Pesa API
+* Airtel Money
+* Card Payment Gateway
+
+Notifications
+
+* SMS Gateway API
+* Email (SMTP/SendGrid)
+
+PDF Generation
+
+* Admission Letters
+* Receipts
+* Student Reports
+
+---
+
+# DESIGN REQUIREMENTS
+
+The interface should be modern, responsive, clean, and mobile-friendly.
+
+Include:
+
+* Light and Dark Mode
+* Responsive layouts
+* Interactive dashboards
+* Charts and graphs
+* Search and filters
+* Data tables with pagination
+* File upload with drag-and-drop
+* Role-based navigation
+* Secure authentication
+* Audit logging
+
+---
+
+# PROJECT OBJECTIVE
+
+The system should digitize and simplify the admission process across multiple institutions, allowing parents to complete nearly all admission requirements online before the reporting date. By handling document submission, fee payment, item purchases, and student allocation in advance, the system aims to reduce the reporting process to **less than 30 minutes**, improving efficiency for institutions and providing a convenient experience for parents and students, especially those travelling from distant locations.

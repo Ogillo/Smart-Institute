@@ -1,0 +1,1 @@
+- [Smart Admission Portal stack](smart-admission-portal.md) — Full-stack admission system: React+Vite frontend, Express 5 API server, PostgreSQL+Drizzle ORM, Clerk auth.
